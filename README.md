@@ -1,16 +1,61 @@
 # flutter_clean_architecture
 
-A new Flutter project.
+Flutter Getx Clean Architecture Starter Project
+
+## Project Structure
+
+```javascript
+lib/
+├── main.dart
+├── core
+│   ├── bindings
+│   │   └── initial_bindings.dart        # Initial bindings (services, etc.)
+│   ├── routes
+│   │   └── app_pages.dart               # Manages app routes
+│   └── theme
+│       ├── theme_service.dart           # Theme management
+│       └── app_themes.dart              # Defines light/dark themes
+├── modules
+│   ├── home
+│   │   └── views
+│   │       └── home_view.dart           # Home screen
+│   └── user
+│       ├── controllers
+│       │   └── user_controller.dart     # Manages API calls and user state
+│       ├── models
+│       │   └── user_model.dart          # Represents user data model
+│       ├── views
+│       │   └── user_view.dart           # UI for user data
+│       └── bindings
+│           └── user_binding.dart        # Injects UserController dependencies
+├── services
+│   └── api_service.dart                 # API service for GetConnect
+└── translations
+    ├── en_us.dart
+    ├── de_de.dart
+    ├── th_th.dart
+    ├── cn_cn.dart
+    └── translations.dart
+```
+
+## Features
+
+- Dark and Light Theme Support
+- Routing Management
+- User Data Fetching from JSONPlaceholder API
+- Localization Support for English, German, and Thai
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Make sure you have Flutter installed on your machine. You can check the installation guide on the [official Flutter website](https://flutter.dev/docs/get-started/install).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Clone the Repository
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/aunji/flutter_clean_architecture.git
+cd flutter_clean_architecture
+```
