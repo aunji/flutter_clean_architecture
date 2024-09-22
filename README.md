@@ -17,6 +17,8 @@ lib/
 │       └── app_themes.dart              # Defines light/dark themes
 ├── modules
 │   ├── home
+│       ├── controllers
+│       │   └── home_controller.dart     
 │   │   └── views
 │   │       └── home_view.dart           # Home screen
 │   └── user
